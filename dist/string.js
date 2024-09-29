@@ -317,6 +317,11 @@ string.js - Copyright (C) 2012-2014, JP Richardson <jprichardson@gmail.com>
     lines: function() { //convert windows newlines to unix newlines then convert to an Array of lines
       return this.replaceAll('\r\n', '\n').s.split('\n');
     },
+	reverse: function () {
+    this.str = this.str.split('').reverse().join('');
+    return this;
+    },
+
 
     pad: function(len, ch) { //https://github.com/component/pad
       if (ch == null) ch = ' ';
