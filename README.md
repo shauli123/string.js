@@ -627,6 +627,17 @@ Example:
 S(' does IT work? ').replaceAll(' ', '_').s; //'_does_IT_work?_'
 S('Yes it does!').replaceAll(' ', '').s; //'Yesitdoes!'
 ```
+## reverse()
+
+Returns a new string that is the reverse of the original string.
+
+### Example:
+
+```javascript
+S('jon').reverse(); // 'noj'
+S('Hello, World!').reverse(); // '!dlroW ,olleH'
+S('12345').reverse(); // '54321'
+```
 
 
 ### + restorePrototype() ###
@@ -1137,6 +1148,7 @@ If you contribute to this library, just modify `string.js`, `string.test.js`, an
 - [*] [Alison Rowland](https://github.com/arowla)
 - [*] [Pascal Bihler](https://github.com/pbihler)
 - [*] [Daniel Diekmeier](https://github.com/danieldiekmeier)
+- [*] [Shauli Sultan](https://github.com/shauli123)
 
 
 
