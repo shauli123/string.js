@@ -593,6 +593,16 @@
         T (S(123).stripRight(3).s === '12');
       });
     });
+    describe('- reverse()', function() {
+  it('should reverse the string', function() {
+    T(S('jon').reverse().s === 'noj');
+    T(S('hello world').reverse().s === 'dlrow olleh');
+    T(S('12345').reverse().s === '54321');
+    T(S('').reverse().s === '');
+    T(S('A man a plan a canal Panama').reverse().s === 'amanaP lanac a nalp a nam A');
+  });
+});
+
 
     describe('+ restorePrototype()', function() {
       it('should restore the original String prototype', function() {
